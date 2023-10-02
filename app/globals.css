@@ -18,3 +18,21 @@
 
 body {
 }
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300; /* Light */
+  font-size: clamp(2rem, 1.333rem + 3.333vw, 4rem);
+}
+
+h2 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600; /* Semi-Bold */
+  font-size: clamp(1.625rem, 0.917rem + 3.542vw, 3.75rem);
+}
+
+h3 {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400; /* Semi-Bold */
+  font-size: clamp(1.5rem, 1.583rem + -0.417vw, 1.25rem);
+}
