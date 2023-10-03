@@ -1,4 +1,5 @@
-import React from "react";
+import { React } from "react";
+import Hamburger from "./Hamburger";
 
 function Header() {
   return (
@@ -10,6 +11,7 @@ function Header() {
         </button>
         <div className="rounded-full bg-white p-4">Contact Us</div>
       </div>
+      <Hamburger />
     </header>
   );
 }
