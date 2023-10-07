@@ -1,8 +1,8 @@
 "use client";
-import React from "react";
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
-import { useState } from "react";
+import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
+import { IconContext } from "react-icons";
 
 function Hamburger() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,19 +10,19 @@ function Hamburger() {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+
   return (
-    <div>
-      <button onClick={handleClick} className="sm:hidden">
-        <MenuIcon
-          fontSize="large"
-          className={isOpen ? "hidden" : "block"}
-          style={{ color: "#00008A" }}
-        />
-        <CloseIcon
-          fontSize="large"
-          className={isOpen ? "block" : "hidden"}
-          style={{ color: "#00008A" }}
-        />
+    <div className="flex">
+      <button onClick={handleClick} className="lg:hidden">
+        <IconContext.Provider
+          value={{
+            color: "#00008A",
+            size: "2em",
+          }}
+        >
+          <GiHamburgerMenu className={isOpen ? "hidden" : "block"} />
+          <AiOutlineClose className={isOpen ? "block" : "hidden"} />
+        </IconContext.Provider>
       </button>
     </div>
   );
