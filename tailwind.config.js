@@ -17,7 +17,13 @@ module.exports = {
         primary: {
           "blue-p": "#00008A",
           "white-p": "#F5F5F5",
-          "bright-cyan": "hsl(192, 70%, 51%)",
+          "grey-p": "#343434",
+          "blue-p2": "#070731",
+        },
+        secondary: {
+          "dark-blue": "#08033e",
+          "light-blue": "#1a21ff",
+          "light-purple": "#313c9a",
         },
       },
     },
