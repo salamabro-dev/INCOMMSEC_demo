@@ -5,13 +5,15 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 function Header({ isOpen }) {
   return (
-    <header className="flex px-10 sm:px-10 py-5 font-bold items-center bg-primary-white-p">
+    <header className="flex px-5 lg:px-10 py-5 font-bold items-center bg-primary-white-p">
       <div className="mr-auto">
         <Image
+          className="logo w-[10em] lg:w-[12em]"
           src="/incommsec-logo.png"
-          width={240}
-          height={81}
+          width={100}
+          height={100}
           alt="Incommsec logo"
+          unoptimized={true}
         />
       </div>
       <div className="hidden lg:flex items-center">

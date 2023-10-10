@@ -1,24 +1,42 @@
+"use client";
 import React from "react";
 import { ImArrowRight2 } from "react-icons/im";
 import { IconContext } from "react-icons";
+import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="bg-white z-0 relative">
-      <div className="text-center pt-8 text-primary-blue-p2 px-10">
+    <section className="bg-primary-white-p px-4">
+      <div className="text-center pt-8 text-primary-blue-p2">
         <p className="py-2">We are a vendor neutral consultant making</p>
         <div className="py-4">
-          <h1 className="tracking-[3.68px] font-extrabold">CYBERSECURITY</h1>
-          <h1 className="font-extralight">simple.</h1>
+          <h1 className="banner-heading tracking-[3.68px] font-extrabold">
+            CYBERSECURITY
+          </h1>
+          <div
+            className={`image-container flex justify-center gap-x-2 items-center`}
+          >
+            <Image
+              src="/Lock.png"
+              className={`lock lg:h-[80px] lg:w-[80px] md:h-[60px] md:w-[60px]`}
+              unoptimized={true}
+              height={57}
+              width={57}
+            />
+            <h1 className="banner-info font-extralight tracking-[6px] md:tracking-[11px]">
+              simple.
+            </h1>
+          </div>
         </div>
-        <div className="py-4 px-20">
+        <div className="banner-text py-4 px-20">
           <p>
             We help business owners and IT managers protect their Networks, IP
-            and Data through innovative and proven software and services.
+            and Data <br></br> through innovative and proven software and
+            services.
           </p>
         </div>
         <div className="flex justify-center">
-          <button className="rounded-full my-2 py-4 px-10 bg-primary-blue-p text-white flex items-center">
+          <button className="banner-btn rounded-full my-2 py-4 px-10 text-white flex items-center">
             Talk to a consultant
             <ImArrowRight2 className="ml-4" />
           </button>

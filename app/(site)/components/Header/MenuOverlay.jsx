@@ -6,7 +6,7 @@ import MenuItem from "./MenuItem";
 export default function MenuOverlay({ displayMenu }) {
   return (
     <div
-      className={`lg:hidden bg-white menu-overlay fixed flex top-[72px] left-0 h-screen w-screen overflow-y-hidden  z-10
+      className={`lg:hidden bg-white menu-overlay fixed flex top-[76px] left-0 h-screen w-screen overflow-y-hidden  z-10
       ${displayMenu ? "block" : "hidden"}`}
     >
       <nav className="gap-20 pl-[39px] ">
