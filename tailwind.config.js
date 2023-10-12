@@ -19,6 +19,7 @@ module.exports = {
           "white-p": "#F5F5F5",
           "grey-p": "#343434",
           "blue-p2": "#070731",
+          "grey-neutral": "#606060",
         },
         secondary: {
           "dark-blue": "#08033e",

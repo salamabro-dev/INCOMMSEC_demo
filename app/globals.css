@@ -41,6 +41,20 @@ h3 {
   font-size: clamp(1.5rem, 1.583rem + -0.417vw, 1.25rem);
 }
 
+q::before,
+q::after {
+  font-family: "Revalia", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+p,
+span {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
 .banner-heading,
 .banner-info,
 .button-background {
@@ -49,10 +63,10 @@ h3 {
   color: transparent;
 }
 
-.image-container {
+/* .image-container {
   width: 100%;
   position: relative;
-}
+} */
 
 .banner-btn {
   background: linear-gradient(45deg, #08033e, #313c9a, #1a21ff);
@@ -63,7 +77,34 @@ h3 {
 }
 
 .image-container {
-  background: black;
+  height: 100%;
+  width: 70%;
   overflow: hidden;
+  border: solid 1px #000;
   border-radius: 70px;
+  border: none;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.overlay {
+  border-radius: 70px;
+  position: absolute;
+  top: 0;
+  width: 36%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the color and opacity here */
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 36%;
+  height: 100%;
+}
+
+.overlay-text {
 }

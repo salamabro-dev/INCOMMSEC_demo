@@ -6,16 +6,14 @@ import Image from "next/image";
 
 export default function Banner() {
   return (
-    <section className="bg-primary-white-p px-4">
+    <section className="bg-primary-white-p px-4 pb-8">
       <div className="text-center pt-8 text-primary-blue-p2">
         <p className="py-2">We are a vendor neutral consultant making</p>
         <div className="py-4">
           <h1 className="banner-heading tracking-[3.68px] font-extrabold">
             CYBERSECURITY
           </h1>
-          <div
-            className={`image-container flex justify-center gap-x-2 items-center`}
-          >
+          <div className={`flex justify-center gap-x-2 items-center`}>
             <Image
               src="/Lock.png"
               className={`lock lg:h-[80px] lg:w-[80px] md:h-[60px] md:w-[60px]`}
