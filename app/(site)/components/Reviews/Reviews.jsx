@@ -8,46 +8,56 @@ function Reviews() {
       </div>
       <div className=" px-4 md:px-8 lg:px-20">
         <div className="grid grid-cols-1 md:grid-cols-12">
-          <div className="md:col-span-4 text-center px-4 py-4">
+          <div className="md:col-span-4 text-center px-4 pb-8">
             <q>
-              <span>
+              <span className="text-primary-grey-neutral">
                 The cyber security threats are constantly changing and as such
                 our requirements are like shifting goal posts, we rely on
-                Incommsec to help us meet the challenges and help keep us safe
+                Incommsec to help us meet the challenges and help keep us safe.
               </span>
             </q>
-            <div className="my-4 department text-grey-neutral">Head of IT</div>
-            <div className="my-4 company text-grey-neutral font-semibold">
-              Crown Oil
+            <div className="flex justify-center lg:block">
+              <p className="my-4 department text-primary-grey-neutral">
+                Head of IT, &nbsp;{" "}
+              </p>
+              <p className="my-4 company text-primary-grey-neutral font-semibold">
+                Crown Oil
+              </p>
             </div>
           </div>
-          <div className="md:col-span-4 text-center px-4 py-4">
+          <div className="md:col-span-4 text-center px-4 pb-8">
             <q>
-              <span>
-                Incommsec has set a bar for security. Its products and services
-                integrate seamlessly.
+              <span className="text-primary-grey-neutral">
+                The cyber security threats are constantly changing and as such
+                our requirements are like shifting goal posts, we rely on
+                Incommsec to help us meet the challenges and help keep us safe.
               </span>
             </q>
-            <div className="my-4 department text-grey-neutral">
-              Daniel, Information Technology Manager
-            </div>
-            <div className="my-4 company text-grey-neutral font-semibold">
-              Sophos
+            <div className="flex justify-center lg:block">
+              <p className="my-4 department text-primary-grey-neutral">
+                Head of IT, &nbsp;{" "}
+              </p>
+              <p className="my-4 company text-primary-grey-neutral font-semibold">
+                Crown Oil
+              </p>
             </div>
           </div>
-          <div className="md:col-span-4 text-center px-4 py-4">
+          <div className="md:col-span-4 text-center px-4 pb-8">
             <q>
-              <span>
-                Switching to Incommsec was a simple transition and all the work
-                was carried out within a week.
+              <span className="text-primary-grey-neutral">
+                The cyber security threats are constantly changing and as such
+                our requirements are like shifting goal posts, we rely on
+                Incommsec to help us meet the challenges and help keep us safe.
               </span>
             </q>
-            <div className="my-4 department text-grey-neutral ">
-              Rene, Head of Information Architecture
+            <div className="flex justify-center lg:block">
+              <p className="my-4 department text-primary-grey-neutral">
+                Head of IT, &nbsp;{" "}
+              </p>
+              <p className="my-4 company text-primary-grey-neutral font-semibold">
+                Crown Oil
+              </p>
             </div>
-            <strong className="my-4 company text-grey-neutral font-semibold">
-              Cisco
-            </strong>
           </div>
         </div>
       </div>
