@@ -3,7 +3,7 @@ import React from "react";
 function Pricing() {
   return (
     <section className="grid bg-primary-white-p pt-8 px-8 pb-16 ">
-      <div className="col-span-full flex justify-center tracking-[3px] text-primary-grey-p py-12 text-center px-4 ">
+      <div className="col-span-full flex justify-center tracking-[3px] text-primary-grey-p py-4 text-center px-4 ">
         <h2>Pricing</h2>
       </div>
 

@@ -8,7 +8,9 @@ export default function Banner() {
   return (
     <section className="bg-primary-white-p px-4 pb-8">
       <div className="text-center pt-8 text-primary-blue-p2">
-        <p className="py-2">We are a vendor neutral consultant making</p>
+        <p className="py-2 text-2xl">
+          We are a vendor neutral consultant making
+        </p>
         <div className="py-4">
           <h1 className="banner-heading tracking-[3.68px] font-extrabold">
             CYBERSECURITY
@@ -26,7 +28,7 @@ export default function Banner() {
             </h1>
           </div>
         </div>
-        <div className="banner-text py-4 px-20">
+        <div className="banner-text py-4 px-10">
           <p>
             We help business owners and IT managers protect their Networks, IP
             and Data <br></br> through innovative and proven software and

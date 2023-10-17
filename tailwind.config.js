@@ -23,6 +23,7 @@ module.exports = {
           "dark-p": "#1d1d1d",
           "grey-neutral-p2": "#B6B6B6",
           "white-p2": "#ffffff",
+          "grey-neutral-p3": "#55575D",
         },
         secondary: {
           "dark-blue": "#08033e",
