@@ -4,6 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Image from "next/image";
 
 function FormClient() {
+  const [submitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -25,12 +26,31 @@ function FormClient() {
           "content-type": "application/json",
         },
       });
+      if (res.status === 200) {
+        setSubmitted(true);
+      }
     } catch (err) {
       console.error("Err", err);
     }
   };
 
-  return (
+  return submitted ? (
+    <div className="grid-cols-12 flex flex-col lg:grid lg:mx-20">
+      <div className="lg:col-span-6 mb-8 text-center">
+        <p className="text-primary-grey-neutral-p2">
+          Success! Our consultant will be in touch soon.
+        </p>
+      </div>
+      <div className="col-span-6 lg:ml-[5rem] flex justify-center">
+        <Image
+          className="w-[350px] lg:w-[500px] lg:h-[330px]"
+          src="/form-banner.svg"
+          width={500}
+          height={500}
+        />
+      </div>
+    </div>
+  ) : (
     <div className="grid-cols-12 flex flex-col lg:grid lg:mx-20">
       <div className="lg:col-span-6">
         <form className="" onSubmit={onSubmit}>
