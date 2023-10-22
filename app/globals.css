@@ -46,7 +46,14 @@ q::after {
   font-family: "Revalia", sans-serif;
   font-size: 32px;
   font-weight: bold;
-  padding: 0 0.5rem;
+}
+
+q::before {
+  padding-right: 0.5rem;
+}
+
+q::after {
+  padding-left: 0.5rem;
 }
 
 p,
@@ -81,11 +88,9 @@ span {
 }
 
 .image-container {
-  height: 100%;
-  width: 70%;
   overflow: hidden;
   border: solid 1px #000;
-  border-radius: 70px;
+  border-radius: 80px;
   border: none;
 }
 

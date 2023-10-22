@@ -3,52 +3,52 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-primary-white-p lg:px-10">
-      <div className="py-10 mx-8">
-        <div className="grid grid-rows-1 lg:grid-cols-5 gap-4">
+      <div className="py-8 mx-8">
+        <div className="grid grid-rows-1 lg:grid-cols-5 gap-8 lg:gap-0">
           <div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-lg font-bold">
+            <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 text-base font-medium">
               Ask a question
-            </div>
-            <div className="p-4 text-primary-grey-neutral-p3">
+            </p>
+            <p className="lg:p-4 text-primary-grey-neutral-p3 ">
               <a className="text-base" href="mailto:mike@incommsec.com">
                 mike@incommsec.com
               </a>
-            </div>
+            </p>
           </div>
           <div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-lg font-bold">
+            <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 font-medium text-base ">
               Registered address
-            </div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-base">
+            </p>
+            <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
               19/21 Swan Street, West Malling, ME19 6JU
-            </div>
+            </p>
           </div>
           <div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-lg font-bold">
+            <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 text-base font-medium">
               Telephone
-            </div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-base">
-              +44 (0)20 3368 6301
-            </div>
+            </p>
+            <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
+              <a href="tel:+442033686301">+44 (0)20 3368 6301</a>
+            </p>
           </div>
           <div>
             <div>
-              <div className="p-4 text-primary-grey-neutral-p3 text-lg font-bold">
+              <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 text-base font-medium">
                 Connect
-              </div>
+              </p>
             </div>
-            <div className="p-4 text-primary-grey-neutral-p3 text-base">
+            <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
               <a
                 href="https://www.linkedin.com/company/incommsec-limited/"
                 target="_blank"
               >
                 Follow us on LinkedIn
               </a>
-            </div>
+            </p>
           </div>
-          <div className="p-4 text-primary-grey-neutral-p3 text-lg font-bold">
+          <p className="lg:p-4 lg:pb-0  text-primary-grey-neutral-p3 text-base font-medium">
             Privacy and cookies
-          </div>
+          </p>
         </div>
       </div>
     </footer>

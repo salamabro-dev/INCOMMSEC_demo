@@ -7,14 +7,16 @@ function Header({ isOpen }) {
   return (
     <header className="flex px-5 lg:px-10 py-5 font-bold items-center bg-primary-white-p">
       <div className="mr-auto">
-        <Image
-          className="logo w-[10em] lg:w-[12em]"
-          src="/incommsec-logo.png"
-          width={100}
-          height={100}
-          alt="Incommsec logo"
-          unoptimized={true}
-        />
+        <a href="/">
+          <Image
+            className="logo w-[10em] lg:w-[12em]"
+            src="/incommsec-logo.png"
+            width={100}
+            height={100}
+            alt="Incommsec logo"
+            unoptimized={true}
+          />
+        </a>
       </div>
       <div className="hidden lg:flex items-center">
         <button className="mr-8 rounded-full py-4 px-10 bg-primary-blue-p text-white hover:bg-primary-grey-p">

@@ -16,6 +16,9 @@
     "@next/font": "^13.5.3",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.16.7",
+    "form-data": "4.0.0",
+    "mailgun": "^0.5.0",
+    "mailgun.js": "9.3.0",
     "next": "latest",
     "next-sanity": "^5.5.4",
     "react": "latest",
@@ -29,6 +32,7 @@
     "eslint": "latest",
     "eslint-config-next": "latest",
     "postcss": "latest",
-    "tailwindcss": "latest"
+    "tailwindcss": "latest",
+    "typescript": "5.2.2"
   }
 }

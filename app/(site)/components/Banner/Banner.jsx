@@ -36,7 +36,7 @@ export default function Banner() {
           </p>
         </div>
         <div className="flex justify-center">
-          <button className="banner-btn rounded-full my-2 py-4 px-10 text-white flex items-center">
+          <button className="banner-btn rounded-full my-2 py-4 px-10 text-white flex items-center my-4">
             Talk to a consultant
             <ImArrowRight2 className="ml-4" />
           </button>
