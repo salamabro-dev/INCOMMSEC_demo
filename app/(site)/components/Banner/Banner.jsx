@@ -12,7 +12,7 @@ export default function Banner() {
           We are a vendor neutral consultant making
         </p>
         <div className="py-4">
-          <h1 className="banner-heading tracking-[3.68px] font-extrabold">
+          <h1 className=" title banner-heading tracking-[3.68px] font-extrabold">
             CYBERSECURITY
           </h1>
           <div className={`flex justify-center gap-x-2 items-center`}>

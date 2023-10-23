@@ -1,33 +1,48 @@
 import React from "react";
+import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Image from "next/image";
 
 function HowWeWork() {
   return (
-    <section className="bg-primary-white-p grid grid-cols-12 ">
-      <div className="text-center pt-8 text-primary-blue-p2 col-span-full">
-        <h2 className="py-2 banner-heading pb-4">How we will work with you</h2>
+    <section className="bg-primary-white-p lg:grid lg:grid-cols-12 ">
+      <div className="text-center pt-8 text-primary-blue-p2 lg:grid lg:col-span-full lg:text-center">
+        <h2 className="py-2 banner-heading pb-4 mb-8">
+          How we will work with you
+        </h2>
       </div>
-      <div className="col-span-8">
-        <div className="mx-2 flex justify-center lg:col-span-8 ">
-          <div className="image-container object-cover mb-8"></div>
-          {/* <div className="relative">
-          <ul className="flex flex-col mx-[8rem] top-[-30rem] absolute text-white gap-y-8">
-            <li className="">
-              {" "}
+      <div className="grid lg:col-span-8 lg:col-start-3 lg:col-end-8 mx-8 justify-center flex lg:mr-12 ">
+        <div className="px-4 mb-8 lg:px-0">
+          <div className="flex gap-4">
+            <CheckCircleIcon style={{ color: "#00008A" }} />
+            <p className="text-primary-grey-p">
               We will have a consultation to understand what is in place, and
-              perform an assessment to analyse what can be improved.
-            </li>
-            <li className="">
-              {" "}
-              We will recommend solutions from our selected vendors to help
-              mitigate risk and strengthen your cyber architecture
-            </li>
-            <li className=""> Provide instant access to the services.</li>
-          </ul>
-        </div> */}
+              perform an assessment to analyse what can be improved.{" "}
+            </p>
+          </div>
+        </div>
+        <div className="px-4 mb-8 lg:px-0">
+          <div className="flex gap-4">
+            <CheckCircleIcon style={{ color: "#00008A" }} />
+            <p className="text-primary-grey-p">
+              We will have a consultation to understand what is in place, and
+              perform an assessment to analyse what can be improved.{" "}
+            </p>
+          </div>
+        </div>
+        <div className="px-4 mb-8 lg:px-0">
+          <div className="flex gap-4">
+            <CheckCircleIcon style={{ color: "#00008A" }} />
+            <p className="text-primary-grey-p">
+              We will have a consultation to understand what is in place, and
+              perform an assessment to analyse what can be improved.{" "}
+            </p>
+          </div>
         </div>
       </div>
-      <div className="col-span-4"></div>
+
+      <div className="lg:col-span-4 hidden lg:grid  pt-[5rem]">
+        <Image className="" src="/control-panel.svg" width={300} height={450} />
+      </div>
     </section>
   );
 }

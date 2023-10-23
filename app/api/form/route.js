@@ -20,11 +20,11 @@ export async function POST(request = NextRequest) {
     subject: "Enquiry",
     text: `
     
-    Hello,
+    Name: ${name} 
+    
+    Email: ${email}
 
-    You have a new form entry from: ${name} ${email}
-
-    ${message}
+    Message: ${message}
     `,
   };
   try {

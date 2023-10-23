@@ -10,8 +10,11 @@ export default function Footer() {
               Ask a question
             </p>
             <p className="lg:p-4 text-primary-grey-neutral-p3 ">
-              <a className="text-base" href="mailto:mike@incommsec.com">
-                mike@incommsec.com
+              <a
+                className="text-base hover:text-primary-blue-p focus:text-primary-blue-p"
+                href="mailto:enquiries@incommsec.com"
+              >
+                enquiries@incommsec.com
               </a>
             </p>
           </div>
@@ -28,7 +31,12 @@ export default function Footer() {
               Telephone
             </p>
             <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
-              <a href="tel:+442033686301">+44 (0)20 3368 6301</a>
+              <a
+                className="hover:text-primary-blue-p focus:text-primary-blue-p"
+                href="tel:+442033686301"
+              >
+                +44 (0)20 3368 6301
+              </a>
             </p>
           </div>
           <div>
@@ -39,6 +47,7 @@ export default function Footer() {
             </div>
             <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
               <a
+                className="hover:text-primary-blue-p focus:text-primary-blue-p"
                 href="https://www.linkedin.com/company/incommsec-limited/"
                 target="_blank"
               >
