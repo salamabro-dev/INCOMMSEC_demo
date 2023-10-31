@@ -77,6 +77,7 @@ span {
 .button-background {
   background: linear-gradient(45deg, #08033e 0%, #313c9a 50%, #1a21ff 100%);
   background-clip: text;
+  -webkit-background-clip: text;
   color: transparent;
 }
 
@@ -93,9 +94,9 @@ span {
   background: linear-gradient(45deg, #08033e, #313c9a, #1a21ff);
 }
 
-.banner-btn:hover {
+/* .banner-btn:hover {
   background: linear-gradient(45deg, #08033e, #313c9a, #555cff);
-}
+} */
 
 .image-container {
   overflow: hidden;

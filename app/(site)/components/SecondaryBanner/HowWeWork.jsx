@@ -1,7 +1,7 @@
 import React from "react";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import Image from "next/image";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import EastIcon from "@mui/icons-material/East";
 
 function HowWeWork() {
   return (
@@ -45,46 +45,57 @@ function HowWeWork() {
         <Image className="" src="/control-panel.svg" width={300} height={450} />
       </div>
 
-      <div className="md:flex md:justify-center md:col-x-8 flex-wrap md:col-span-12 md:pt-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-12 md:gap-x-8 md:px-20 flex-wrap md:col-span-12 md:pt-10 ">
         <div className="md:col-span-4 pb-8 ">
-          <div className="flex justify-center flex-col items-center text-center px-[8rem] md:px-8 lg:px-4">
+          <div className="items-center text-center  md:px-8 lg:px-4">
             <p className="banner-info font-semibold pb-4 text-[52px]"> 81% </p>
             <p className="text-primary-grey-p pb-4 text-lg">
               {" "}
               Of organisations experience malware attacks.{" "}
             </p>
             <p className="text-lg">
-              <a className="text-primary-grey-p font-medium" href="/">
+              <a
+                className="text-primary-grey-p font-medium group hover:text-primary-blue-p"
+                href="/"
+              >
                 Go to Endpoint Protection
+                <EastIcon className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
               </a>
             </p>
           </div>
         </div>
-        <div className="md:col-span-4 pb-8">
-          <div className="flex justify-center flex-col items-center text-center px-[8rem] md:px-8 lg:px-4">
+        <div className="md:col-span-4 pb-8 ">
+          <div className="items-center text-center  md:px-8 lg:px-4">
             <p className="banner-info font-semibold pb-4 text-[52px]"> 81% </p>
             <p className="text-primary-grey-p pb-4 text-lg">
               {" "}
               Of organisations experience malware attacks.{" "}
             </p>
             <p className="text-lg">
-              <a className="text-primary-grey-p font-medium" href="/">
+              <a
+                className="text-primary-grey-p font-medium group hover:text-primary-blue-p"
+                href="/"
+              >
                 Go to Endpoint Protection
-                <ArrowForwardIcon />
+                <EastIcon className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
               </a>
             </p>
           </div>
         </div>
-        <div className="md:col-span-4 pb-8">
-          <div className="flex justify-center flex-col items-center text-center px-[8rem] md:px-8 lg:px-4">
+        <div className="md:col-span-4 pb-8 ">
+          <div className="items-center text-center  md:px-8 lg:px-4">
             <p className="banner-info font-semibold pb-4 text-[52px]"> 81% </p>
             <p className="text-primary-grey-p pb-4 text-lg">
               {" "}
               Of organisations experience malware attacks.{" "}
             </p>
             <p className="text-lg">
-              <a className="text-primary-grey-p font-medium" href="/">
+              <a
+                className="text-primary-grey-p font-medium group hover:text-primary-blue-p"
+                href="/"
+              >
                 Go to Endpoint Protection
+                <EastIcon className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
               </a>
             </p>
           </div>

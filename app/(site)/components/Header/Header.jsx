@@ -19,19 +19,16 @@ function Header({ isOpen }) {
         </a>
       </div>
       <div className="hidden lg:flex items-center">
-        <button className="mr-8 rounded-full py-4 px-10 bg-primary-blue-p text-white hover:bg-primary-grey-p">
+        <button className="py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p">
           Product and services
           <KeyboardArrowDownIcon
-            className="ml-2"
             style={{ color: "##00008A" }}
             fontSize="large"
+            className="group-hover:translate-y-2 transition-transform duration-300 ease-in-out"
           />
         </button>
         <div className="">
-          <button
-            className="rounded-full py-6 px-10 border-primary-blue-p border bg-white
- hover:border-primary-grey-p hover:bg-primary-grey-p hover:text-white "
-          >
+          <button className="py-6 text-primary-grey-p hover:text-primary-blue-p">
             Contact us
           </button>
         </div>
