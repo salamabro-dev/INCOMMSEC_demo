@@ -6,11 +6,13 @@ const client = createClient({
   projectId: projectId,
   dataset: dataset,
   apiVersion: apiVersion,
+  useCdn: false,
 });
 
 export async function getBanners() {
   return client.fetch(
     groq`*[_type == "banner"]{
+        _id,
         sectionTitle,
         bannerHeading,
         bannerSubheading,
@@ -20,6 +22,25 @@ export async function getBanners() {
         image,
         alt
     }`
+  );
+}
+
+export async function getHowWeWork() {
+  return client.fetch(
+    groq`*[_type == "howWeWork"] {
+  _id,
+  title,
+  "items": items[]{
+    description
+  },
+  "image": image,
+  "stats": stats[]{
+    title,
+    subheading,
+    linkText,
+    link
+  }
+}`
   );
 }
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Pricing() {
   return (
-    <section className="grid bg-primary-white-p px-8 pb-16  md:grid md:grid-cols-12 ">
+    <section className="grid bg-white px-8 pb-16  md:grid md:grid-cols-12 ">
       <div className="col-span-full flex justify-center tracking-[3px] text-primary-grey-p py-8 lg:py-12 text-center px-4 ">
         <h2>Pricing</h2>
       </div>
