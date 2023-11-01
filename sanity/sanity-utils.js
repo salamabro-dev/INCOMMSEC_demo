@@ -44,6 +44,20 @@ export async function getHowWeWork() {
   );
 }
 
+export async function getReview() {
+  return client.fetch(
+    groq`*[_type == "review"]{
+      _id,
+      title,
+      "reviews": reviews[]{
+      review,
+      role,
+      company
+      }
+    }`
+  );
+}
+
 const builder = imageUrlBuilder(client);
 
 export function urlFor(source) {

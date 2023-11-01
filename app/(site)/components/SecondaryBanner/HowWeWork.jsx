@@ -35,7 +35,7 @@ export default async function HowWeWork() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-12 md:gap-x-8 md:px-20 flex-wrap md:col-span-12 md:pt-10 ">
             {info.stats.map((stat) => (
-              <div className="md:col-span-4">
+              <div className="md:col-span-4 mx-8 mb-12">
                 <div className="items-center text-center md:flex md:flex-col  md:px-8 lg:px-4 h-full ">
                   <p className="banner-info font-semibold pb-4 text-[52px]">
                     {stat.title}
@@ -45,7 +45,7 @@ export default async function HowWeWork() {
                   </p>
                   <p className="text-lg pt-4 mt-auto">
                     <a
-                      className="text-primary-grey-p font-medium group hover:text-primary-blue-p"
+                      className="text-primary-grey-p font-medium group hover:text-primary-blue-p cursor-pointer"
                       href={stats.link}
                     >
                       {stat.linkText}
