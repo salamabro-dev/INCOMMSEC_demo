@@ -7,6 +7,7 @@ import {
 import { reviewSchema, reviewsSchema } from "./schema/components/reviewSchema";
 import pricingSchema from "./schema/components/pricingSchema";
 import index from "./schema/components/index";
+import formSchema from "./schema/components/formSchema";
 
 export const schema = {
   types: [
@@ -18,5 +19,6 @@ export const schema = {
     reviewSchema,
     reviewsSchema,
     pricingSchema,
+    formSchema,
   ],
 };

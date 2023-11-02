@@ -1,39 +1,56 @@
-import { React } from "react";
+"use client";
+import { React, useState, useEffect } from "react";
 import Hamburger from "./Hamburger";
 import Image from "next/image";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import ProductAndServices from "./ProductAndServices";
 
 function Header({ isOpen }) {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    let prevScrollPos = 0;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.scrollY;
+
+      if (currentScrollPos > prevScrollPos) {
+        setIsScrolled(false); // Scrolling down
+      } else {
+        setIsScrolled(true); // Scrolling up
+      }
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="flex px-5 lg:px-10 py-5 font-bold items-center bg-primary-white-p">
-      <div className="mr-auto">
-        <a href="/">
-          <Image
-            className="logo w-[10em] lg:w-[12em]"
-            src="/incommsec-logo.png"
-            width={100}
-            height={100}
-            alt="Incommsec logo"
-            unoptimized={true}
-          />
-        </a>
-      </div>
-      <div className="hidden lg:flex items-center">
-        <button className="py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p">
-          Product and services
-          <KeyboardArrowDownIcon
-            style={{ color: "##00008A" }}
-            fontSize="large"
-            className="group-hover:translate-y-2 transition-transform duration-300 ease-in-out"
-          />
-        </button>
-        <div className="">
-          <button className="py-6 text-primary-grey-p hover:text-primary-blue-p">
-            Contact us
-          </button>
+    <header
+      className={`fixed top-0 z-50  transition-transform duration-700 transform w-full ${
+        isScrolled ? "" : "-translate-y-full"
+      }`}
+    >
+      <nav className="flex px-5 lg:px-10 py-5 font-bold items-center bg-primary-white-p">
+        <div className="mr-auto">
+          <a href="/">
+            <Image
+              className="logo w-[10em] lg:w-[12em]"
+              src="/incommsec-logo.png"
+              width={100}
+              height={100}
+              alt="Incommsec logo"
+              unoptimized={true}
+              loading="lazy"
+            />
+          </a>
         </div>
-      </div>
-      <Hamburger />
+        <ProductAndServices />
+        <Hamburger />
+      </nav>
     </header>
   );
 }

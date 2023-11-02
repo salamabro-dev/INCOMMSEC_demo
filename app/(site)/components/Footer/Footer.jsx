@@ -55,9 +55,19 @@ export default function Footer() {
               </a>
             </p>
           </div>
-          <p className="lg:p-4 lg:pb-0  text-primary-grey-neutral-p3 text-base font-medium">
-            Privacy and cookies
-          </p>
+          <div>
+            <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 text-base font-medium">
+              Privacy and cookies
+            </p>
+            <p className="lg:p-4 text-primary-grey-neutral-p3 text-base">
+              <a
+                className="hover:text-primary-blue-p focus:text-primary-blue-p"
+                href="/"
+              >
+                Our Policy
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>

@@ -24,7 +24,7 @@ export default async function Pricing() {
                   {price.description}
                 </p>
                 <div className="text-center ">
-                  <button className="py-4 border rounded-full border-primary-blue-p text-primary-blue-p px-10 bg-white hover:bg-primary-grey-p hover:text-white ">
+                  <button className="py-4 border rounded-full border-primary-blue-p text-primary-blue-p px-10 bg-white hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out ">
                     {price.btnText}
                   </button>
                 </div>
@@ -37,7 +37,7 @@ export default async function Pricing() {
               src={urlFor(price.image).url()}
               width={300}
               height={300}
-              alt={price.alt}
+              alt={price.image.alt}
             />
           </div>
         </section>

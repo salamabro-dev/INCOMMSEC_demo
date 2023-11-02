@@ -73,6 +73,18 @@ export async function getPricing() {
   );
 }
 
+export async function getForm() {
+  return client.fetch(
+    groq`*[_type == "form"] {
+      _id,
+      title,
+      subheading,
+      image,
+      alt
+    }`
+  );
+}
+
 const builder = imageUrlBuilder(client);
 
 export function urlFor(source) {
