@@ -5,6 +5,7 @@ import {
   statsSchema,
 } from "./schema/components/howWeWorkSchema";
 import { reviewSchema, reviewsSchema } from "./schema/components/reviewSchema";
+import pricingSchema from "./schema/components/pricingSchema";
 import index from "./schema/components/index";
 
 export const schema = {
@@ -16,5 +17,6 @@ export const schema = {
     statsSchema,
     reviewSchema,
     reviewsSchema,
+    pricingSchema,
   ],
 };

@@ -58,6 +58,21 @@ export async function getReview() {
   );
 }
 
+export async function getPricing() {
+  return client.fetch(
+    groq`*[_type == "pricing"] {
+  _id,
+    title,
+    heading,
+    description,
+    btnText,
+    btnLink,
+    image,
+    alt,
+}`
+  );
+}
+
 const builder = imageUrlBuilder(client);
 
 export function urlFor(source) {
