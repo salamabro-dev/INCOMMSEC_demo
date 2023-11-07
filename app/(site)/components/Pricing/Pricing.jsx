@@ -33,7 +33,7 @@ export default async function Pricing() {
           </div>
           <div className="md:col-span-4 md:grid flex justify-center">
             <Image
-              className=""
+              className="h-[300px] w-[300px] "
               src={urlFor(price.image).url()}
               width={300}
               height={300}

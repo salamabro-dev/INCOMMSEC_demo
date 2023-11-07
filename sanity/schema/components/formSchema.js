@@ -9,7 +9,7 @@ const formSchema = {
       title: "Title",
     },
     {
-      name: "suheading",
+      name: "subheading",
       type: "text",
       title: "Subheading",
     },

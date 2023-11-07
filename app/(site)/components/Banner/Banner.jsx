@@ -8,7 +8,7 @@ export default async function Banner() {
   return (
     <>
       {banners.map((banner) => (
-        <section className="bg-primary-white-p px-4 pb-8 pt-[100px]">
+        <section className="bg-primary-white-p px-4 pb-8 pt-[50px] lg:pt-[100px]">
           <div
             key={banner._id}
             className="text-center pt-8 text-primary-blue-p2"

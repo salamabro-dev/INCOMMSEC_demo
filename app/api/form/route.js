@@ -19,11 +19,11 @@ export async function POST(request = NextRequest) {
     to: "sontruong@hotmail.co.uk",
     subject: "Enquiry",
     text: `
-    
-    Name: ${name} 
-    
-    Email: ${email}
 
+    Name: ${name}
+
+    Email:${email}
+    
     Message: ${message}
     `,
   };

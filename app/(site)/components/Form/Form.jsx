@@ -17,11 +17,11 @@ export default async function Form() {
             <FormClient />
             <div className="col-span-6 lg:ml-[5rem] flex justify-center">
               <Image
-                className="w-[350px] lg:w-[500px] lg:h-[330px]"
+                className="w-[300px] lg:w-[500px] lg:h-[330px]"
                 src={urlFor(form.image).url()}
                 alt={form.image.alt}
                 width={500}
-                height={500}
+                height={330}
               />
             </div>
           </div>

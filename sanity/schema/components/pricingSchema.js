@@ -41,6 +41,16 @@ const pricingSchema = {
           type: "string",
           title: "Alt Text",
         },
+        {
+          name: "width",
+          type: "number",
+          title: "width",
+        },
+        {
+          name: "height",
+          type: "number",
+          title: "height",
+        },
       ],
     },
   ],

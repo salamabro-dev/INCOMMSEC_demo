@@ -24,11 +24,13 @@ module.exports = {
           "grey-neutral-p2": "#B6B6B6",
           "white-p2": "#ffffff",
           "grey-neutral-p3": "#55575D",
+          "white-p3": "#FEFEFE",
         },
         secondary: {
           "dark-blue": "#08033e",
           "light-blue": "#1a21ff",
           "light-purple": "#313c9a",
+          "light-grey": "#DBDBDB",
         },
       },
     },

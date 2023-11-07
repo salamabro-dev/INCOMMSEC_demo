@@ -5,7 +5,7 @@ import Image from "next/image";
 import ProductAndServices from "./ProductAndServices";
 
 function Header({ isOpen }) {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
     let prevScrollPos = 0;
@@ -18,6 +18,7 @@ function Header({ isOpen }) {
       } else {
         setIsScrolled(true); // Scrolling up
       }
+
       prevScrollPos = currentScrollPos;
     };
 

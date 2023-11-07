@@ -2,9 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-white-p lg:px-10">
+    <footer className="bg-primary-white-p">
       <div className="py-8 mx-8">
-        <div className="flex flex-col lg:flex-row lg:justify-evenly gap-8 lg:gap-0">
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-8 lg:gap-0">
           <div>
             <p className="lg:p-4 lg:pb-0 pb-2 text-primary-grey-neutral-p3 text-base font-medium">
               Ask a question
