@@ -85,9 +85,10 @@ span {
   color: transparent;
 }
 
-.dark-theme-heading-one {
+.dark-theme-heading-one,
+.dark-theme-heading-two {
   background: linear-gradient(
-    90deg,
+    to left,
     rgba(209, 214, 255, 1) 0%,
     rgba(128, 140, 255, 1) 97%
   );

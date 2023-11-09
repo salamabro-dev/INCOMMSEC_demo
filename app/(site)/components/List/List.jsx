@@ -10,8 +10,10 @@ function List() {
       </div>
       <div className="mb-16 md:mx-16  list-container">
         <div className="md:py-4 md:px-12">
-          <p className="list-title text-xl pb-4">Using BrightCloud</p>
-          <p className="text-lg pb-8 text-primary-grey-p">
+          <p className="list-title text-xl md:text-2xl pb-4">
+            Using BrightCloud
+          </p>
+          <p className="text-lg md:text-2xl pb-8 text-primary-grey-p">
             World class threat intelligence services.{" "}
           </p>
           <ul className="custom-list">
@@ -32,8 +34,10 @@ function List() {
       </div>
       <div className="mb-16 list-container md:ml-[10rem]">
         <div className="md:py-4 md:px-12">
-          <p className="list-title text-xl pb-4">Constant protection</p>
-          <p className="text-lg pb-8 text-primary-grey-p">
+          <p className="list-title text-xl pb-4 md:text-2xl">
+            Constant protection
+          </p>
+          <p className="text-lg md:text-2xl pb-8 text-primary-grey-p">
             World class threat intelligence services.{" "}
           </p>
           <ul className="custom-list">
@@ -54,8 +58,10 @@ function List() {
       </div>
       <div className="mb-16 md:mx-16  list-container">
         <div className="md:py-4 md:px-12">
-          <p className="list-title text-xl pb-4">Using BrightCloud</p>
-          <p className="text-lg pb-8 text-primary-grey-p">
+          <p className="list-title text-xl pb-4 md:text-2xl">
+            Using BrightCloud
+          </p>
+          <p className="text-lg md:text-2xl pb-8 text-primary-grey-p">
             World class threat intelligence services.{" "}
           </p>
           <ul className="custom-list">

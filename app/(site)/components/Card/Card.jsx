@@ -34,7 +34,8 @@ function Card() {
               Offline protection
             </p>
             <p className="text-base text-primary-grey-p">
-              Stops attacks when the endpoint is offline.
+              Identifying suspicious activity typical of malware. With powerful
+              heuristic settings adjust by you.
             </p>
           </div>
         </div>
@@ -47,7 +48,8 @@ function Card() {
               Offline protection
             </p>
             <p className="text-base text-primary-grey-p">
-              Stops attacks when the endpoint is offline.
+              See how long any infection on any endpoint has been on your
+              network prior to automatic remediation.
             </p>
           </div>
         </div>

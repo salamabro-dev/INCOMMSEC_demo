@@ -2,7 +2,7 @@ import React from "react";
 
 function DarkThemeBanner() {
   return (
-    <section className="bg-primary-dark-p pt-[80px] lg:pt-[100px]">
+    <section className="bg-primary-grey-p pt-[80px] lg:pt-[100px]">
       <div className="px-12 py-8 md:px-[8rem] md:py-[8rem]">
         <div className="text-center flex justify-center my-4">
           <h1 className="dark-theme-heading-one">ENDPOINT PROTECTION</h1>

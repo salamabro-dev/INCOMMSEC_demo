@@ -2,7 +2,7 @@ import React from "react";
 
 function TextBlock() {
   return (
-    <section className="bg-primary-dark-p p-12 grid grid-cols-1 md:grid-cols-4">
+    <section className="bg-primary-grey-p p-12 grid grid-cols-1 md:grid-cols-4">
       <div className=" md:col-span-3 mb-8 md:my-[5rem]">
         <div className="pb-8">
           <h2 className="dark-theme-title-block">Why it’s important</h2>
