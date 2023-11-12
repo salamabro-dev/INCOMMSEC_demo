@@ -35,12 +35,11 @@ function DarkThemeSecondaryBanner() {
           </div>
         </div>
         <div className="text-center px-8 py-8 ">
-          <button className="dark-theme-btn border-transparent py-4 rounded-full text-white px-10 hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out w-full md:w-max">
+          <button className="dark-theme-btn border-transparent py-4 rounded-full text-white px-10 w-full md:w-max group">
             Talk to a consultant
             <EastIcon
-              className="ml-2"
+              className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
               style={{ color: "#ffff" }}
-              fontSize="large"
             />
           </button>
         </div>

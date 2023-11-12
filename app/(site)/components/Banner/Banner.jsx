@@ -1,5 +1,5 @@
 import React from "react";
-import { ImArrowRight2 } from "react-icons/im";
+import EastIcon from "@mui/icons-material/East";
 import Image from "next/image";
 import { getBanners, urlFor } from "../../../../sanity/sanity-utils";
 
@@ -34,9 +34,6 @@ export default async function Banner() {
                 </h1>
               </div>
             </div>
-            <div className="banner-text py-4 text-center px-0 md:px-[12rem] lg:px-[15rem]">
-              <p className="md:text-xl">{banner.bannerText}</p>
-            </div>
             <div className="flex justify-center">
               <a
                 href={banner.buttonLink}
@@ -45,9 +42,14 @@ export default async function Banner() {
               >
                 <button className="banner-btn rounded-full my-2 py-4 px-10 text-white flex items-center my-4 group">
                   {banner.buttonText}
-                  <ImArrowRight2 className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
+                  <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
                 </button>
               </a>
+            </div>
+            <div className="banner-text py-4 text-center px-0 md:px-[12rem] lg:px-[15rem]">
+              <p className="md:text-xl landing-description">
+                {banner.bannerText}
+              </p>
             </div>
           </div>
         </section>

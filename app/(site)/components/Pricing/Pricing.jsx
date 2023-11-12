@@ -11,17 +11,22 @@ export default async function Pricing() {
           key={price._id}
           className="grid bg-white px-8 pb-16  md:grid md:grid-cols-12 "
         >
-          <div className="col-span-full flex justify-center tracking-[3px] text-primary-grey-p py-8 lg:py-12 text-center px-4 ">
+          <div className="col-span-full flex justify-center tracking-[3px] text-primary-grey-p py-8 lg:py-12 text-center px-4 font-normal ">
             <h2>{price.title}</h2>
           </div>
           <div className="grid md:col-span-8 lg:col-start-3 lg:col-end-8 justify-center flex  ">
             <div className="px-4 mb-8 lg:px-0">
               <div className="flex gap-8 flex-col lg:mb-0 mb-4">
-                <p className="banner-heading md:text-2xl text-xl ">
+                <p className="banner-heading md:text-2xl text-xl text-center md:text-left ">
                   {price.heading}
                 </p>
-                <p className="text-primary-grey-p md:text-lg">
-                  {price.description}
+                <p className="text-primary-grey-p md:text-lg font-medium">
+                  {price.description.split("\n").map((line, index) => (
+                    <React.Fragment key={index}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ))}
                 </p>
                 <div className="text-center ">
                   <button className="py-4 border rounded-full border-primary-blue-p text-primary-blue-p px-10 bg-white hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out ">

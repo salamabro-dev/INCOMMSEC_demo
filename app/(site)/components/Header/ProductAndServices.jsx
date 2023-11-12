@@ -38,7 +38,8 @@ function ProductAndServices() {
           </button>
         </div>
         <div className="">
-          <button
+          <a
+            href="./contact-us"
             className="py-6 text-primary-grey-p hover:text-primary-blue-p hover:underline decoration-2 underline-offset-8"
             onMouseEnter={() => setContactHover(true)}
             onMouseLeave={() => setContactHover(false)}
@@ -50,7 +51,7 @@ function ProductAndServices() {
             >
               Contact us
             </p>
-          </button>
+          </a>
         </div>
       </div>
     </>

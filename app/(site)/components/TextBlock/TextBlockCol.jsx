@@ -18,7 +18,7 @@ function TextBlockCol() {
         <div className="grid grid-cols-1 lg:grid-cols-3">
           <div className="py-8 lg:mx-8">
             <div className="flex align-center flex-col ">
-              <p className=" text-primary-white-p3 font-normal pb-4 text-2xl md:text-left">
+              <p className=" text-primary-white-p3 font-normal pb-4 text-xl lg:text-2xl md:text-left">
                 Cost savings
               </p>
               <p className="text-base text-primary-white-p3 ">
@@ -30,7 +30,7 @@ function TextBlockCol() {
           </div>
           <div className="py-8 lg:mx-8">
             <div className="flex align-center flex-col ">
-              <p className=" text-primary-white-p3 font-normal pb-4 text-2xl md:text-left">
+              <p className=" text-primary-white-p3 font-normal pb-4 text-xl lg:text-2xl md:text-left">
                 User Awareness
               </p>
               <p className="text-base text-primary-white-p3 ">
@@ -41,7 +41,7 @@ function TextBlockCol() {
           </div>
           <div className=" py-8 lg:mx-8">
             <div className="flex align-center flex-col ">
-              <p className=" text-primary-white-p3 font-normal pb-4 text-2xl md:text-left">
+              <p className=" text-primary-white-p3 font-normal pb-4 text-xl lg:text-2xl md:text-left">
                 Strengthen Defence
               </p>
               <p className="text-base text-primary-white-p3 ">

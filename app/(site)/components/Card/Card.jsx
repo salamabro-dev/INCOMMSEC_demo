@@ -55,11 +55,13 @@ function Card() {
         </div>
       </div>
       <div className="flex justify-center mx-4">
-        <a className="text-primary-grey-p md:ml-auto" href="">
-          Find out how we can help
+        <a
+          className="text-primary-grey-p md:ml-auto group hover:gradient-text"
+          href=""
+        >
+          <span className="font-medium">Find out how we can help</span>
           <EastIcon
-            className="ml-2"
-            style={{ color: "#343434" }}
+            className="ml-2 transform text-primary-grey-p group-hover:text-blue-900 group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
             fontSize="medium"
           />
         </a>

@@ -38,7 +38,7 @@ function CardBtn() {
           </div>
         </div>
       </div>
-      <div className="text-center ">
+      <div className="text-center my-8 ">
         <button className="py-4 border rounded-full border-primary-blue-p text-primary-blue-p px-10 bg-white hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out ">
           Book a Pen Test
         </button>

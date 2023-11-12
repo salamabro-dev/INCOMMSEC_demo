@@ -17,6 +17,9 @@ const pricingSchema = {
       name: "description",
       type: "text",
       title: "Description",
+      options: {
+        markdown: true,
+      },
     },
     {
       name: "btnText",

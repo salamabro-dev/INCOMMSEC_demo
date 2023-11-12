@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import CircularProgress from "@mui/material/CircularProgress";
 
-function FormClient() {
+function ContactClient() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [name, setName] = useState("");
@@ -41,20 +41,13 @@ function FormClient() {
     }
   };
 
-  const loader = (
-    <>
-      <span className="mr-2">Loading...</span>
-      <CircularProgress size={20} thickness={4} color="inherit" />
-    </>
-  );
-
   return (
     <div className="lg:col-span-6">
       <form className="" onSubmit={onSubmit}>
         <fieldset className="flex flex-col gap-y-8 pb-20">
           <div className="flex flex-col">
             <label
-              className="text-primary-white-p2 pb-2 text-base justify-left flex"
+              className="text-primary-grey-p pb-2 text-base justify-left flex"
               htmlFor="name"
             >
               Your Name:
@@ -62,7 +55,7 @@ function FormClient() {
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full "
+              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full border-blue-700 "
               type="text"
               id="name"
               name="name"
@@ -71,7 +64,7 @@ function FormClient() {
           </div>
           <div className="flex flex-col">
             <label
-              className="text-primary-white-p2 pb-2 text-base flex justify-left "
+              className="text-primary-grey-p pb-2 text-base flex justify-left "
               htmlFor="email"
             >
               Email
@@ -79,7 +72,7 @@ function FormClient() {
             <input
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full "
+              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full border-blue-700 "
               type="email"
               id="email"
               name="email"
@@ -87,7 +80,7 @@ function FormClient() {
           </div>
           <div className="flex flex-col">
             <label
-              className="text-primary-white-p2 pb-2 text-base justify-left flex"
+              className="text-primary-grey-p pb-2 text-base justify-left flex"
               htmlFor="message"
             >
               Solution you want to learn about
@@ -95,13 +88,13 @@ function FormClient() {
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full "
+              className="rounded-lg border border-2 px-1 py-2 text-base pl-2 w-full border-blue-700 "
               id="message"
               name="message"
             ></textarea>
           </div>
           {submitted ? (
-            <p className="text-primary-white-p2 mb-8 text-center">
+            <p className="text-primary-grey-p mb-8 text-center">
               Success! Our consultant will be in touch soon.
             </p>
           ) : (
@@ -112,7 +105,10 @@ function FormClient() {
                 disabled={loading}
               >
                 {loading ? (
-                  loader
+                  <>
+                    <span className="mr-2">Loading...</span>
+                    <CircularProgress size={20} thickness={4} color="inherit" />
+                  </>
                 ) : (
                   <>
                     Submit
@@ -132,4 +128,4 @@ function FormClient() {
   );
 }
 
-export default FormClient;
+export default ContactClient;
