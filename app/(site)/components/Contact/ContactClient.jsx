@@ -67,7 +67,7 @@ function ContactClient() {
               className="text-primary-grey-p pb-2 text-base flex justify-left "
               htmlFor="email"
             >
-              Email
+              Business email
             </label>
             <input
               value={email}
@@ -83,7 +83,7 @@ function ContactClient() {
               className="text-primary-grey-p pb-2 text-base justify-left flex"
               htmlFor="message"
             >
-              Solution you want to learn about
+              Solution you're interested in
             </label>
             <textarea
               value={message}

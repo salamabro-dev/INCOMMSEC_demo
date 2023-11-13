@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger";
 import Image from "next/image";
 import ProductAndServices from "./ProductAndServices";
 
-function Header({ isOpen }) {
+function Header({ disableScroll }) {
   const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
@@ -49,7 +49,7 @@ function Header({ isOpen }) {
             />
           </a>
         </div>
-        <ProductAndServices />
+        <ProductAndServices disableScroll={disableScroll} />
         <Hamburger />
       </nav>
     </header>
