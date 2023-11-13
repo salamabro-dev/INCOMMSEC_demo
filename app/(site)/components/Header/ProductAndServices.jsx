@@ -4,18 +4,21 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import CloseIcon from "@mui/icons-material/Close";
 import EastIcon from "@mui/icons-material/East";
+import Link from "next/link";
 
-function ProductAndServices({ disableScroll }) {
+function ProductAndServices() {
   const [isHover, setIsHover] = useState(false);
   const [contactHover, setContactHover] = useState(false);
-  const [hoverMenu, setHoverMeny] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleProductClick = () => {
-    setShowModal(true);
+    setShowModal(!showModal);
     // Disable scrolling
     document.body.style.overflow = "hidden";
     document.body.style.height = "100vh";
+    // Reset the clicked state when closing the modal
+    setIsClicked(false);
   };
 
   const handleCloseMenu = () => {
@@ -24,12 +27,19 @@ function ProductAndServices({ disableScroll }) {
     setShowModal(false);
   };
 
+  const handleClick = () => {
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+    setIsClicked(true);
+    setShowModal(!showModal);
+  };
+
   return (
     <>
       <div className="hidden lg:flex items-center ">
         <div>
           <button
-            className="py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p hover:underline decoration-2 underline-offset-8 flex items-center relative ${showModal ? 'modal-open' : 'bg-red-500'}`}"
+            className="py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p hover:underline decoration-2 underline-offset-8 flex items-center relative"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
             onClick={handleProductClick}
@@ -74,59 +84,172 @@ function ProductAndServices({ disableScroll }) {
       </div>
 
       {showModal && (
-        <div className="modal-overlay hidden lg:block">
-          <div class="absolute top-[17rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto mt-8 p-4 bg-white rounded-3xl shadow-md ">
-            <span className="flex justify-end cursor-pointer">
-              <CloseIcon onClick={handleCloseMenu} />
-            </span>
-            <div class="text-center  text-primary-dark-p my-4 ">
-              <p className="text-2xl font-normal archivo ">
+        <div className="modal-overlay hidden lg:block modal-container">
+          <div className="absolute top-[20rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto mt-8 p-4 bg-white rounded-3xl shadow-md">
+            <div className="flex justify-end cursor-pointer">
+              <button className="" onClick={handleCloseMenu}>
+                <CloseIcon className="text-primary-grey-p" />
+              </button>
+            </div>
+            <div className="text-center text-primary-dark-p my-4">
+              <p className="text-2xl font-normal archivo">
                 Custom EndPoint Security solutions
               </p>
             </div>
-            <div>
-              <div class="grid grid-cols-3 gap-4 mb-12">
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Endpoint protection
+            <div className="pl-[84px]">
+              <div className="mx-auto grid grid-cols-3 gap-4 mb-12">
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="/end-point-protection"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Endpoint protection
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Employee monitoring
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Employee monitoring
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral ">
-                  Email security
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Email security
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Pen testing and vulnerability scans
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Pen testing and vulnerability scans
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Security Operations Centre as a Service
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Security Operations Centre as a Service
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Disaster recovery
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Disaster recovery
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Phishing risk management and training
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Phishing risk management and training
+                    </Link>
+                  </p>
                 </div>
-                <div class="flex-1 p-4 text-primary-grey-neutral">
-                  Accreditations
+                <div className="p-4 text-primary-grey-neutral">
+                  <p className="font-light">
+                    <Link
+                      href="#"
+                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      onClick={handleClick}
+                    >
+                      <EastIcon
+                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        fontSize="small"
+                      />
+                      Accreditations
+                    </Link>
+                  </p>
                 </div>
               </div>
-              <div className="mx-20 mt-8 p-2 bg-white rounded-3xl shadow-md bg-white shadow-lg shadow-gray-100">
+            </div>
+            <Link href="/contact-us">
+              <button
+                className={`modal-box mx-[20rem] p-8 mb-8 p-2 rounded-3xl shadow-lg shadow-gray-100 border group ${
+                  isClicked ? "bg-[#F5F5F5]" : "bg-white"
+                }`}
+                onClick={() => {
+                  handleClick();
+                  handleCloseMenu(); // Close the modal after clicking the link
+                }}
+              >
                 <div className="text-center">
-                  <p class="font-normal archivo text-2xl pb-4 ">Price plans</p>
+                  <p className="modal-box-title font-normal archivo text-2xl pb-4 group-hover:text-blue-950">
+                    Price plans
+                  </p>
                   <p className="text-primary-grey-p font-light pb-4">
                     We tailor each service to the needs of the customer. For
                     pricing, get in touch for a free consultation.
                   </p>
                   <p className="font-medium">
-                    <a href="" className="group">
+                    <a
+                      href=""
+                      className="group modal-box-icon group-hover:text-blue-950 "
+                    >
                       Get in touch
                       <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
                     </a>
                   </p>
                 </div>
-              </div>
-            </div>
+              </button>
+            </Link>
           </div>
         </div>
       )}

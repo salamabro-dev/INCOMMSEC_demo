@@ -12,15 +12,15 @@ function Hamburger() {
     setIsOpen(!isOpen);
   };
 
-  // Toggle overflow-y:hidden on the html element when the menu is open
-  useEffect(() => {
-    const htmlElement = document.documentElement;
-    if (!isOpen) {
-      htmlElement.style.overflowY = "auto";
-    } else {
-      htmlElement.style.overflowY = "hidden";
-    }
-  }, [isOpen]);
+  // // Toggle overflow-y:hidden on the html element when the menu is open
+  // useEffect(() => {
+  //   const htmlElement = document.documentElement;
+  //   if (!isOpen) {
+  //     htmlElement.style.overflowY = "auto";
+  //   } else {
+  //     htmlElement.style.overflowY = "hidden";
+  //   }
+  // }, [isOpen]);
 
   return (
     <div className="flex">

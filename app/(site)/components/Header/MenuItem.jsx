@@ -1,23 +1,30 @@
 import React from "react";
 import { ImArrowRight2 } from "react-icons/im";
 import { IconContext } from "react-icons";
+import Link from "next/link";
 
-export default function MenuItem({ text, link }) {
+export default function MenuItem({ text, link, onClick }) {
+  const handleItemClick = () => {
+    onClick(); // Invoke the onClick function passed from the parent
+  };
+
   return (
     <li className="group">
-      <a
-        className="group-hover:text-primary-blue-p flex items-center  gap-x-2 "
-        href={link}
-      >
-        <IconContext.Provider
-          value={{
-            color: "#070731",
-          }}
+      <Link href={link} passHref>
+        <a
+          className="group-hover:text-primary-blue-p flex items-center  gap-x-2 "
+          onClick={handleItemClick}
         >
-          <ImArrowRight2 className="group-hover:fill-primary-blue-p" />
-        </IconContext.Provider>
-        {text}
-      </a>
+          <IconContext.Provider
+            value={{
+              color: "#070731",
+            }}
+          >
+            <ImArrowRight2 className="group-hover:fill-primary-blue-p" />
+          </IconContext.Provider>
+          {text}
+        </a>
+      </Link>
     </li>
   );
 }
