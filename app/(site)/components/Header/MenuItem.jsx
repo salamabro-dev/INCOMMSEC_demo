@@ -7,23 +7,21 @@ export default function MenuItem({ text, link, onClick }) {
   const handleItemClick = () => {
     onClick(); // Invoke the onClick function passed from the parent
   };
-
   return (
     <li className="group">
-      <Link href={link} passHref>
-        <a
-          className="group-hover:text-primary-blue-p flex items-center  gap-x-2 "
-          onClick={handleItemClick}
+      <Link
+        className="group-hover:text-primary-blue-p flex items-center  gap-x-2 "
+        href={link}
+        onClick={handleItemClick}
+      >
+        <IconContext.Provider
+          value={{
+            color: "#070731",
+          }}
         >
-          <IconContext.Provider
-            value={{
-              color: "#070731",
-            }}
-          >
-            <ImArrowRight2 className="group-hover:fill-primary-blue-p" />
-          </IconContext.Provider>
-          {text}
-        </a>
+          <ImArrowRight2 className="group-hover:fill-primary-blue-p" />
+        </IconContext.Provider>
+        {text}
       </Link>
     </li>
   );

@@ -29,13 +29,33 @@ export default function MenuOverlay({ displayMenu, onCloseMenu }) {
             link="/"
             onClick={handleLinkClick}
           />
-          <MenuItem text="Phishing risk management and training" link="/" />
-          <MenuItem text="Phishing risk management" link="/" />
-          <MenuItem text="Employee monitoring" link="/" />
-          <MenuItem text="Security Operations Centre as a Service" link="/" />
-          <MenuItem text="Accreditations" link="/" />
-          <MenuItem text="Email security" link="/" />
-          <MenuItem text="Disaster recovery" link="/" />
+          <MenuItem
+            text="Phishing risk management and training"
+            link="/"
+            onClick={handleLinkClick}
+          />
+          <MenuItem
+            text="Phishing risk management"
+            link="/"
+            onClick={handleLinkClick}
+          />
+          <MenuItem
+            text="Employee monitoring"
+            link="/"
+            onClick={handleLinkClick}
+          />
+          <MenuItem
+            text="Security Operations Centre as a Service"
+            link="/"
+            onClick={handleLinkClick}
+          />
+          <MenuItem text="Accreditations" link="/" onClick={handleLinkClick} />
+          <MenuItem text="Email security" link="/" onClick={handleLinkClick} />
+          <MenuItem
+            text="Disaster recovery"
+            link="/"
+            onClick={handleLinkClick}
+          />
         </ul>
       </nav>
     </div>
