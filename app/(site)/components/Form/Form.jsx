@@ -13,8 +13,8 @@ export default async function Form() {
           key={form._id}
         >
           <div className="text-center pb-8">
-            <h2 className="text-white pb-4">{form.title}</h2>
             <p className="text-primary-grey-neutral-p2 ">{form.subheading}</p>
+            <h2 className="text-white pb-4">{form.title}</h2>
           </div>
           <div className="grid-cols-12 flex flex-col lg:grid lg:mx-20">
             <FormClient />

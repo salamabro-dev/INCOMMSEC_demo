@@ -241,7 +241,7 @@ function ProductAndServices() {
                       className="group modal-box-icon group-hover:text-blue-950 "
                     >
                       Get in touch
-                      <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
+                      <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out hidden" />
                     </a>
                   </p>
                 </div>
