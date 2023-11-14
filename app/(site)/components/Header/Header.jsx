@@ -5,18 +5,18 @@ import Logo from "./Logo";
 import ProductAndServices from "./ProductAndServices";
 
 function Header({ disableScroll }) {
-  const [isScrolled, setIsScrolled] = useState(() => window.scrollY > 0);
+  const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
-    let prevScrollPos = window.scrollY;
+    let prevScrollPos = 0;
 
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
 
-      if (currentScrollPos >= prevScrollPos) {
-        setIsScrolled(true); // Scrolling down
+      if (currentScrollPos > prevScrollPos) {
+        setIsScrolled(false); // Scrolling down
       } else {
-        setIsScrolled(currentScrollPos > 0); // Scrolling up, set to true if not at the top
+        setIsScrolled(true); // Scrolling up
       }
 
       prevScrollPos = currentScrollPos;
