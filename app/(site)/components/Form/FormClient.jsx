@@ -119,7 +119,7 @@ function FormClient() {
                     <FaArrowRightLong
                       className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
                       style={{ color: "#ffff" }}
-                      size={32}
+                      size={24}
                     />
                   </>
                 )}

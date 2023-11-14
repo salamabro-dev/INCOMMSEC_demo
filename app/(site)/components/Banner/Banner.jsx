@@ -1,5 +1,4 @@
 import React from "react";
-import EastIcon from "@mui/icons-material/East";
 import Image from "next/image";
 import { getBanners, urlFor } from "../../../../sanity/sanity-utils";
 import { FaArrowRightLong } from "react-icons/fa6";

@@ -3,7 +3,7 @@ import { React, useState, useEffect } from "react";
 import { FaChevronDown } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
 import { MdClose } from "react-icons/md";
-import EastIcon from "@mui/icons-material/East";
+import { ImArrowRight2 } from "react-icons/im";
 import Link from "next/link";
 
 function ProductAndServices() {
@@ -99,118 +99,94 @@ function ProductAndServices() {
                   <p className="font-light text-xl">
                     <Link
                       href="/end-point-protection"
-                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900  "
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        injectFirst
-                        className=" hidden group-hover:flex transition duration-300 ease-in group-hover:text-blue-900  "
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Endpoint protection
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Employee monitoring
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className=" flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Email security
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Pen testing and vulnerability scans
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className=" hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Security Operations Centre as a Service
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Disaster recovery
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className=" hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Phishing risk management and training
                     </Link>
                   </p>
                 </div>
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
-                      href="#"
-                      className="flex gap-1 items-center group min-w-fit "
+                      href="/end-point-protection"
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900 hover:translate-x-2 transition-transform duration-300 ease-in-out  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <ImArrowRight2 className=" hidden group-hover:inline group-hover:text-blue-900  " />
                       Accreditations
                     </Link>
                   </p>
@@ -235,14 +211,14 @@ function ProductAndServices() {
                     We tailor each service to the needs of the customer. For
                     pricing, get in touch for a free consultation.
                   </p>
-                  <p className="font-medium">
+                  <p className="font-medium flex items-center justify-center">
                     <a
                       href=""
                       className="group modal-box-icon group-hover:text-blue-950 "
                     >
                       Get in touch
-                      <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
                     </a>
+                    <ImArrowRight2 className="ml-3 transform group-hover:translate-x-2 group-hover:text-blue-950  transition-transform duration-300 ease-in-out" />
                   </p>
                 </div>
               </button>

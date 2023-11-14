@@ -1,5 +1,5 @@
 import React from "react";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function DarkThemeSecondaryBanner() {
   return (
@@ -36,11 +36,14 @@ function DarkThemeSecondaryBanner() {
         </div>
         <div className="text-center px-8 py-8 ">
           <button className="dark-theme-btn border-transparent py-4 rounded-full text-white px-10 w-full md:w-max group">
-            Talk to a consultant
-            <EastIcon
-              className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
-              style={{ color: "#ffff" }}
-            />
+            <div className="flex items-center justify-center">
+              Talk to a consultant
+              <FaArrowRightLong
+                className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
+                style={{ color: "#ffff" }}
+                size={24}
+              />
+            </div>
           </button>
         </div>
       </section>

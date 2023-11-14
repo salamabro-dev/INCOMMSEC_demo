@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { FaSpinner } from "react-icons/fa";
 
 function ContactClient() {
@@ -112,10 +112,10 @@ function ContactClient() {
                 ) : (
                   <>
                     Submit
-                    <ArrowForwardIcon
+                    <FaArrowRightLong
                       className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
                       style={{ color: "#ffff" }}
-                      fontSize="large"
+                      size={24}
                     />
                   </>
                 )}
