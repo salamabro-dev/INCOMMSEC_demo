@@ -105,7 +105,10 @@ function ProductAndServices() {
                       className="flex gap-1 items-center group min-w-fit hover:text-blue-900  "
                       onClick={handleClick}
                     >
-                      <EastIcon className=" hidden group-hover:flex transition duration-300 ease-in group-hover:text-blue-900  " />
+                      <EastIcon
+                        injectFirst
+                        className=" hidden group-hover:flex transition duration-300 ease-in group-hover:text-blue-900  "
+                      />
                       Endpoint protection
                     </Link>
                   </p>
