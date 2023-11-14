@@ -1,8 +1,8 @@
 "use client";
 import { React, useState, useEffect } from "react";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import CloseIcon from "@mui/icons-material/Close";
+import { FaChevronDown } from "react-icons/fa6";
+import { FaChevronUp } from "react-icons/fa6";
+import { MdClose } from "react-icons/md";
 import EastIcon from "@mui/icons-material/East";
 import Link from "next/link";
 
@@ -39,7 +39,7 @@ function ProductAndServices() {
       <div className="hidden lg:flex items-center ">
         <div>
           <button
-            className="py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p hover:underline decoration-2 underline-offset-8 flex items-center relative"
+            className="gap-1 py-4 pr-8 text-primary-grey-p group hover:text-primary-blue-p hover:underline decoration-2 underline-offset-8 flex items-center relative"
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
             onClick={handleProductClick}
@@ -52,14 +52,11 @@ function ProductAndServices() {
               Product and services
             </p>
             {isHover ? (
-              <KeyboardArrowUpIcon
-                style={{ color: "##00008A" }}
-                fontSize="large"
-              />
+              <FaChevronUp style={{ color: "##00008A" }} size={24} />
             ) : (
-              <KeyboardArrowDownIcon
+              <FaChevronDown
                 style={{ color: "##00008A" }}
-                fontSize="large"
+                size={24}
                 className="transition-transform duration-300 ease-in-out"
               />
             )}
@@ -88,7 +85,7 @@ function ProductAndServices() {
           <div className="absolute top-[20rem] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 container mx-auto mt-8 p-4 bg-white rounded-3xl shadow-md">
             <div className="flex justify-end cursor-pointer">
               <button className="" onClick={handleCloseMenu}>
-                <CloseIcon className="text-primary-grey-p" />
+                <MdClose className="text-primary-grey-p" size={24} />
               </button>
             </div>
             <div className="text-center text-primary-dark-p my-4">
