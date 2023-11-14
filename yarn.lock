@@ -7666,7 +7666,7 @@ style-mod@^4.0.0, style-mod@^4.1.0:
   resolved "https://registry.npmjs.org/style-mod/-/style-mod-4.1.0.tgz"
   integrity sha512-Ca5ib8HrFn+f+0n4N4ScTIA9iTOQ7MaGS1ylHcoVqW9J7w2w8PzN6g9gKmTYgGEBH8e120+RCmhpje6jC5uGWA==
 
-styled-components@^5.2, "styled-components@^5.2 || ^6", "styled-components@^5.2.0 || ^6.0.0", styled-components@^5.3.11, "styled-components@>= 2":
+styled-components@^5.2, "styled-components@^5.2 || ^6", "styled-components@^5.2.0 || ^6.0.0", "styled-components@>= 2":
   version "5.3.11"
   resolved "https://registry.npmjs.org/styled-components/-/styled-components-5.3.11.tgz"
   integrity sha512-uuzIIfnVkagcVHv9nE0VPlHPSCmXIUGKfJ42LNjxCCTDTL5sgnJ8Z7GZBq0EnLYGln77tPpEpExt2+qa+cZqSw==
