@@ -7,27 +7,27 @@ import ProductAndServices from "./ProductAndServices";
 function Header({ disableScroll }) {
   const [isScrolled, setIsScrolled] = useState(true);
 
-  useEffect(() => {
-    let prevScrollPos = 0;
+  // useEffect(() => {
+  //   let prevScrollPos = 0;
 
-    const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
+  //   const handleScroll = () => {
+  //     const currentScrollPos = window.scrollY;
 
-      if (currentScrollPos > prevScrollPos) {
-        setIsScrolled(false); // Scrolling down
-      } else {
-        setIsScrolled(true); // Scrolling up
-      }
+  //     if (currentScrollPos > prevScrollPos) {
+  //       setIsScrolled(false); // Scrolling down
+  //     } else {
+  //       setIsScrolled(true); // Scrolling up
+  //     }
 
-      prevScrollPos = currentScrollPos;
-    };
+  //     prevScrollPos = currentScrollPos;
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
+  //   window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
 
   return (
     <header
