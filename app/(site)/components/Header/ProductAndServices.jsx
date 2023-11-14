@@ -99,7 +99,7 @@ function ProductAndServices() {
             <div className="pl-[84px]">
               <div className="mx-auto grid grid-cols-3 gap-4 mb-12">
                 <div className="p-4 text-primary-grey-neutral">
-                  <p className="font-light">
+                  <p className="font-light text-xl">
                     <Link
                       href="/end-point-protection"
                       className="flex gap-1 items-center group min-w-fit hover:text-blue-900  "
@@ -241,7 +241,7 @@ function ProductAndServices() {
                       className="group modal-box-icon group-hover:text-blue-950 "
                     >
                       Get in touch
-                      <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out hidden" />
+                      <EastIcon className="ml-3 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
                     </a>
                   </p>
                 </div>
