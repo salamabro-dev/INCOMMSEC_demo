@@ -46,7 +46,7 @@ function TextBlockColTwo() {
         <div>
           <div className="lg:pb-8 lg:px-[5rem]">
             <h2 className="dark-theme-title-block text-center">
-              Why it's important
+              Why its important
             </h2>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 mb-8">

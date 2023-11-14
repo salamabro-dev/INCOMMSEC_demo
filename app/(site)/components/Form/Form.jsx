@@ -8,7 +8,10 @@ export default async function Form() {
   return (
     <>
       {forms.map((form) => (
-        <section className="grid bg-primary-dark-p pt-8 px-8 pb-16 ">
+        <section
+          className="grid bg-primary-dark-p pt-8 px-8 pb-16"
+          key={form._id}
+        >
           <div className="text-center pb-8">
             <h2 className="text-white pb-4">{form.title}</h2>
             <p className="text-primary-grey-neutral-p2 ">{form.subheading}</p>

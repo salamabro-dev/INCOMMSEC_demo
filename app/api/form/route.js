@@ -6,7 +6,7 @@ const API_KEY = process.env.MAILGUN_API_KEY || "";
 const DOMAIN = process.env.MAILGUN_DOMAIN || "";
 
 // To handle a POST request to /api
-export async function POST(request = NextRequest) {
+export async function POST(request = {}) {
   const mailgun = new Mailgun(formData);
   const client = mailgun.client({ username: "api", key: API_KEY });
 

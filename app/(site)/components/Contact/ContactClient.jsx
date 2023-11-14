@@ -83,7 +83,7 @@ function ContactClient() {
               className="text-primary-grey-p pb-2 text-base justify-left flex"
               htmlFor="message"
             >
-              Solution you're interested in
+              Solution youre interested in
             </label>
             <textarea
               value={message}

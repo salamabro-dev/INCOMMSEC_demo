@@ -23,7 +23,7 @@ export default function CardBorder() {
             </p>
             <div className="lg:pl-0 pb-12">
               <p className="text-lg text-primary-grey-p">
-                We price the service per user. So that you don't have to invest
+                We price the service per user. So that you dont have to invest
                 in hardware, infrastructure, people, training, licensing, and
                 management.
               </p>

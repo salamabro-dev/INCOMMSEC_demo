@@ -8,11 +8,11 @@ export default async function Banner() {
   return (
     <>
       {banners.map((banner) => (
-        <section className="bg-primary-white-p px-4 pb-8 pt-[50px] lg:pt-[100px]">
-          <div
-            key={banner._id}
-            className="text-center pt-8 text-primary-blue-p2"
-          >
+        <section
+          key={banner._id}
+          className="bg-primary-white-p px-4 pb-8 pt-[50px] lg:pt-[100px]"
+        >
+          <div className="text-center pt-8 text-primary-blue-p2">
             <p className="py-2 text-2xl">{banner.sectionTitle}</p>
             <div className="py-4">
               <h1 className="title banner-heading tracking-[3.68px] font-extrabold pb-2">
