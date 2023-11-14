@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities {
   .gradient-text {
     background: rgb(0, 55, 195);

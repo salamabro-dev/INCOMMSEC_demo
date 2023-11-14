@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CircularProgress from "@mui/material/CircularProgress";
+import { FaSpinner } from "react-icons/fa";
 
 function ContactClient() {
   const [submitted, setSubmitted] = useState(false);
@@ -107,7 +107,7 @@ function ContactClient() {
                 {loading ? (
                   <>
                     <span className="mr-2">Loading...</span>
-                    <CircularProgress size={20} thickness={4} color="inherit" />
+                    <FaSpinner className="animate-spin" />
                   </>
                 ) : (
                   <>
