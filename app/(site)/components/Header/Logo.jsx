@@ -1,20 +1,24 @@
 import React from "react";
 import Image from "next/image";
+import { getLogo, urlFor } from "../../../..//sanity/sanity-utils";
 
-function Logo() {
+export default async function Logo() {
+  const logo = await getLogo();
   return (
-    <div className="mr-auto">
-      <a href="/">
-        <Image
-          className="logo w-[10em] lg:w-[12em]"
-          src="/incommsec-logo.png"
-          width={100}
-          height={100}
-          alt="Incommsec logo"
-        />
-      </a>
-    </div>
+    <>
+      {logo.map((logos) => (
+        <div className="mr-auto" key={logos._id}>
+          <a href="/">
+            <Image
+              className="logo w-[10em] lg:w-[12em]"
+              src={urlFor(logos.image).url()}
+              width={100}
+              height={100}
+              alt="Incommsec logo"
+            />
+          </a>
+        </div>
+      ))}
+    </>
   );
 }
-
-export default Logo;

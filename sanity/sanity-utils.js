@@ -87,6 +87,15 @@ export async function getForm() {
 
 const builder = imageUrlBuilder(client);
 
+export async function getLogo() {
+  return client.fetch(
+    groq`*[_type == "logo"] {
+      _id,
+      image
+    }`
+  );
+}
+
 export function urlFor(source) {
   return builder.image(source);
 }
