@@ -1,7 +1,7 @@
 "use client";
 import { React, useState, useEffect } from "react";
 import Hamburger from "./Hamburger";
-import Image from "next/image";
+import Logo from "./Logo";
 import ProductAndServices from "./ProductAndServices";
 
 function Header({ disableScroll }) {
@@ -36,19 +36,7 @@ function Header({ disableScroll }) {
       }`}
     >
       <nav className="flex px-5 lg:px-10 py-5 font-bold items-center bg-primary-white-p">
-        <div className="mr-auto">
-          <a href="/">
-            <Image
-              className="logo w-[10em] lg:w-[12em]"
-              src="/incommsec-logo.png"
-              width={100}
-              height={100}
-              alt="Incommsec logo"
-              unoptimized={true}
-              loading="lazy"
-            />
-          </a>
-        </div>
+        <Logo />
         <ProductAndServices disableScroll={disableScroll} />
         <Hamburger />
       </nav>
