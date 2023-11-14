@@ -92,7 +92,7 @@ function ProductAndServices() {
               </button>
             </div>
             <div className="text-center text-primary-dark-p my-4">
-              <p className="text-2xl font-normal archivo">
+              <p className="text-2xl font-normal archivo text-primary-blue-p">
                 Custom EndPoint Security solutions
               </p>
             </div>
@@ -102,13 +102,10 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="/end-point-protection"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit hover:text-blue-900  "
                       onClick={handleClick}
                     >
-                      <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
-                        fontSize="small"
-                      />
+                      <EastIcon className=" hidden group-hover:flex transition duration-300 ease-in group-hover:text-blue-900  " />
                       Endpoint protection
                     </Link>
                   </p>
@@ -117,11 +114,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className="hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Employee monitoring
@@ -132,11 +129,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className=" flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className="hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Email security
@@ -147,11 +144,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className="hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Pen testing and vulnerability scans
@@ -162,11 +159,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className=" hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Security Operations Centre as a Service
@@ -177,11 +174,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className="hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Disaster recovery
@@ -192,11 +189,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className=" hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Phishing risk management and training
@@ -207,11 +204,11 @@ function ProductAndServices() {
                   <p className="font-light">
                     <Link
                       href="#"
-                      className="modal-list flex gap-1 items-center group min-w-fit "
+                      className="flex gap-1 items-center group min-w-fit "
                       onClick={handleClick}
                     >
                       <EastIcon
-                        className="modal-list-icon hidden group-hover:inline transition duration-300 ease-in  "
+                        className="hidden group-hover:inline transition duration-300 ease-in  "
                         fontSize="small"
                       />
                       Accreditations

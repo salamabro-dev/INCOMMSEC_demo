@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { ImArrowRight2 } from "react-icons/im";
 import { IconContext } from "react-icons";

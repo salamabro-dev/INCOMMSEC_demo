@@ -14,7 +14,7 @@ export default function MenuOverlay({ displayMenu, onCloseMenu }) {
     >
       <nav className="gap-20 pl-[1rem] w-full ">
         <div className="text-center text-primary-dark-p my-8">
-          <p className="text-2xl font-bold archivo text-[#0037C3]">
+          <p className="text-2xl font-bold archivo text-primary-blue-p">
             Custom EndPoint Security solutions
           </p>
         </div>
@@ -51,11 +51,7 @@ export default function MenuOverlay({ displayMenu, onCloseMenu }) {
           />
           <MenuItem text="Accreditations" link="/" onClick={handleLinkClick} />
           <MenuItem text="Email security" link="/" onClick={handleLinkClick} />
-          <MenuItem
-            text="Disaster recovery"
-            link="/"
-            onClick={handleLinkClick}
-          />
+          <MenuItem text="Disaster recovery" link="/" />
         </ul>
       </nav>
     </div>

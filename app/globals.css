@@ -305,7 +305,7 @@ ul.custom-list {
   z-index: 100; /* Adjust the z-index as needed to ensure it covers other elements */
 }
 
-.modal-list:hover {
+/* .modal-list:hover {
   background: rgb(0, 12, 117);
   background: linear-gradient(
     68deg,
@@ -317,6 +317,6 @@ ul.custom-list {
   color: transparent;
 }
 
-.modal-list:hover > .modal-list-icon {
+.modal-list:hover > svg {
   color: rgb(0, 12, 117);
-}
+} */
