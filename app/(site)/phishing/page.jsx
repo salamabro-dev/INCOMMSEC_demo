@@ -4,6 +4,7 @@ import DarkThemeImageCard from "../components/Card/DarkThemeImageCard";
 import Card from "../components/Card/Card";
 import ListImage from "../components/List/ListImage";
 import TextBlockColTwo from "../components/TextBlock/TextBlockColTwo";
+import CardBorder from "../components/Card/CardBorder";
 
 function page() {
   return (
@@ -13,6 +14,7 @@ function page() {
       <Card />
       <ListImage />
       <TextBlockColTwo />
+      <CardBorder />
     </>
   );
 }

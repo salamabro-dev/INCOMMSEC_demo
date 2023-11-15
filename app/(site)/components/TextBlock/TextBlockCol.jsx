@@ -15,7 +15,7 @@ function TextBlockCol() {
             cyberattacks and data breaches.
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:pl-20">
           <div className="py-8 lg:mx-8">
             <div className="flex align-center flex-col ">
               <p className=" text-primary-white-p3 font-normal pb-4 text-xl lg:text-2xl md:text-left">

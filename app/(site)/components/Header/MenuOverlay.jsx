@@ -8,7 +8,7 @@ export default function MenuOverlay({ displayMenu, onCloseMenu }) {
 
   return (
     <div
-      className={`lg:hidden bg-white menu-overlay fixed flex top-[76px] left-0 h-screen w-screen overflow-y-hidden z-10 transform transition-transform duration-300 ${
+      className={`lg:hidden bg-white menu-overlay fixed flex top-[148px] left-0 h-screen w-screen overflow-y-hidden z-10 transform transition-transform duration-300 ${
         displayMenu ? "translate-x-0" : "translate-x-full"
       }`}
     >

@@ -1,7 +1,7 @@
 import React from "react";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import { IoCheckmarkCircleSharp } from "react-icons/io5";
 import Image from "next/image";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 import { getHowWeWork, urlFor } from "../../../../sanity/sanity-utils";
 
 export default async function HowWeWork() {
@@ -17,16 +17,19 @@ export default async function HowWeWork() {
             <h2 className="py-2 banner-heading pb-4 mb-8">{info.title}</h2>
           </div>
 
-          <div className="grid lg:col-span-8 lg:col-start-3 lg:col-end-8 mx-8 justify-center flex lg:mr-12  ">
+          <ul className="grid lg:col-span-8 lg:col-start-3 lg:col-end-8 mx-8 justify-center flex lg:mr-12  ">
             {info.items.map((item) => (
-              <div className="px-4 mb-8 lg:px-0" key={item._id}>
+              <li className="px-4 mb-8 lg:px-0" key={item._id}>
                 <div className="flex gap-4">
-                  <CheckCircleIcon style={{ color: "#00008A" }} />
+                  <IoCheckmarkCircleSharp
+                    style={{ color: "#00008A" }}
+                    size={24}
+                  />
                   <p className="text-primary-grey-p">{item.description}</p>
                 </div>
-              </div>
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="lg:col-span-4 hidden lg:grid  pt-[5rem]">
             <Image
               className=""
@@ -48,11 +51,14 @@ export default async function HowWeWork() {
                   </p>
                   <p className="text-lg pt-4 mt-auto">
                     <a
-                      className="text-primary-grey-p font-medium group hover:text-primary-blue-p cursor-pointer"
+                      className="flex items-center justify-center text-primary-grey-p font-medium group hover:text-primary-blue-p cursor-pointer"
                       href={stats.link}
                     >
                       {stat.linkText}
-                      <EastIcon className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out" />
+                      <FaArrowRightLong
+                        size={24}
+                        className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
+                      />
                     </a>
                   </p>
                 </div>

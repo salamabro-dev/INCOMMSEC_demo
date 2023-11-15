@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function Card() {
   return (
@@ -56,13 +56,14 @@ function Card() {
       </div>
       <div className="flex justify-center mx-4">
         <a
-          className="text-primary-grey-p md:ml-auto group hover:gradient-text"
+          className="text-primary-grey-p md:ml-auto group hover:gradient-text flex items-center"
           href=""
         >
           <span className="font-medium">Find out how we can help</span>
-          <EastIcon
+          <FaArrowRightLong
             className="ml-2 transform text-primary-grey-p group-hover:text-blue-900 group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
             fontSize="medium"
+            size={24}
           />
         </a>
       </div>

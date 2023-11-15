@@ -1,5 +1,5 @@
 import React from "react";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";
 
 function DarkThemeImageCard() {
@@ -38,12 +38,13 @@ function DarkThemeImageCard() {
           <Image src={"/broadcast.svg"} height={250} width={250} />
         </div>
       </div>
-      <div className="text-center px-8">
-        <button className="dark-theme-btn border-transparent py-4 rounded-full text-white px-10 hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out w-full md:w-max group">
+      <div className="text-center px-8 flex justify-center ">
+        <button className="dark-theme-btn border-transparent py-4 rounded-full text-white px-10 hover:bg-primary-grey-p hover:text-white duration-300 ease-in-out w-full md:w-max group flex justify-center items-center">
           Talk to a consultant
-          <EastIcon
+          <FaArrowRightLong
             className="ml-2 transform group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
             style={{ color: "#ffff" }}
+            size={24}
           />
         </button>
       </div>

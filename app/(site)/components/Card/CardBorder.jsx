@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 export default function CardBorder() {
   return (
@@ -30,13 +30,13 @@ export default function CardBorder() {
             </div>
             <div className="flex justify-center md:justify-end lg:pt-8">
               <a
-                className="text-primary-grey-p  group hover:gradient-text"
+                className="text-primary-grey-p  group hover:gradient-text flex items-center justify-center"
                 href="/"
               >
                 <span className="font-medium">Get a quote</span>
-                <EastIcon
+                <FaArrowRightLong
                   className="ml-2 transform text-primary-grey-p group-hover:text-blue-900 group-hover:translate-x-2 transition-transform duration-300 ease-in-out "
-                  fontSize="medium"
+                  size={24}
                 />
               </a>
             </div>

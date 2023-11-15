@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import EastIcon from "@mui/icons-material/East";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 function CardImage() {
   return (
@@ -20,13 +20,15 @@ function CardImage() {
               We scan internal or external facing IP addresses of the
               organisation to the point of identifying a vulnerability.{" "}
             </p>
-            <div className="flex justify- justify-start lg:justify-end py-2">
-              <a href="/">
+            <div className="flex justify-center  lg:justify-end py-2">
+              <a
+                className="flex items-center  group hover:gradient-text text-primary-grey-p"
+                href="/"
+              >
                 <span className="font-medium">Find out how we can help </span>
-                <EastIcon
-                  className="ml-2"
-                  style={{ color: "#343434" }}
-                  fontSize="medium"
+                <FaArrowRightLong
+                  className=" text-primary-grey-p ml-2 transform group-hover:text-blue-900 group-hover:translate-x-2 transition-transform duration-300 ease-in-out"
+                  size={24}
                 />
               </a>
             </div>
