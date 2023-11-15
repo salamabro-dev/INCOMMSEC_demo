@@ -22,13 +22,13 @@ export async function POST(request = {}) {
 
   const messageData = {
     from: "Incommsec enquiry <t.truong@thaitruong.co.uk>",
-    to: "t.truong@thaitruong.co.uk",
+    to: "sontruong@hotmail.co.uk",
     subject: "Enquiry",
     text: `
 
     Name: ${name}
 
-     Email: <a href="mailto:${email}">${email}</a>
+    Email: ${email}
     
     Message: ${message}
     `,
