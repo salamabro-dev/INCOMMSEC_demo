@@ -1,4 +1,4 @@
-import { NextResponse, NextRequest } from "next/server";
+import { NextResponse } from "next/server";
 import formData from "form-data";
 import Mailgun from "mailgun.js";
 
@@ -15,7 +15,7 @@ export async function POST(request = {}) {
   const { name, email, message } = data;
 
   const messageData = {
-    from: "Incommsec enquiry <mailgun@sandboxeea6f3e2b17c4408ae748e1bdc8e0bfc.mailgun.org>",
+    from: "test enquiry <t.truong@thaitruong.co.uk>",
     to: "sontruong@hotmail.co.uk",
     subject: "Enquiry",
     text: `
