@@ -22,7 +22,7 @@ export async function POST(request = {}) {
 
   const messageData = {
     from: "Incommsec enquiry <t.truong@thaitruong.co.uk>",
-    to: "sontruong@hotmail.co.uk",
+    to: "t.truong@thaitruong.co.uk",
     subject: "Enquiry",
     text: `
 
