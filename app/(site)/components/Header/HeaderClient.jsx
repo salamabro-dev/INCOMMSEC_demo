@@ -5,7 +5,7 @@ function HeaderClient({ children }) {
   const [isScrolled, setIsScrolled] = useState(true);
 
   useEffect(() => {
-    let prevScrollPos = 0;
+    let prevScrollPos = 10;
 
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
