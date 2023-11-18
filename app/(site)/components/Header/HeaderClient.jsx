@@ -3,12 +3,19 @@ import { React, useState, useEffect } from "react";
 
 function HeaderClient({ children }) {
   const [isScrolled, setIsScrolled] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    let prevScrollPos = 10;
+    let prevScrollPos = 0;
 
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
+
+      if (window.innerWidth <= 768) {
+        setIsMobile(true); // Mobile view
+      } else {
+        setIsMobile(false); // Desktop view
+      }
 
       if (currentScrollPos > prevScrollPos) {
         setIsScrolled(false); // Scrolling down
@@ -34,7 +41,7 @@ function HeaderClient({ children }) {
     <>
       <header
         className={`fixed top-0 z-50 transition-transform duration-700 transform w-full ${
-          isScrolled ? "" : "-translate-y-full"
+          isMobile && !isScrolled ? "" : isScrolled ? "" : "-translate-y-full"
         }`}
       >
         {children}
