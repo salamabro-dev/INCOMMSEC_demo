@@ -44,7 +44,7 @@ function ContactClient() {
   return (
     <div className="lg:col-span-6">
       <form className="" onSubmit={onSubmit}>
-        <fieldset className="flex flex-col gap-y-8 pb-20">
+        <fieldset className="flex flex-col gap-y-8 md:pb-20">
           <div className="flex flex-col">
             <label
               className="text-primary-grey-p pb-2 text-base justify-left flex"

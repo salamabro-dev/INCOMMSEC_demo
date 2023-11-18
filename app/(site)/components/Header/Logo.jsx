@@ -15,7 +15,7 @@ export default async function Logo() {
               width={100}
               height={100}
               alt="Incommsec logo"
-              unoptimized={false}
+              unoptimized
             />
           </a>
         </div>

@@ -99,7 +99,7 @@ span {
 }
 
 .title {
-  font-size: clamp(2.25rem, 1.102rem + 6.122vw, 6rem);
+  font-size: clamp(1.5rem, -0.3367rem + 9.7959vw, 7.5rem);
 }
 
 .landing-description {
@@ -150,9 +150,11 @@ span {
 .dark-theme-title-block {
   background: rgb(217, 221, 255);
   background: linear-gradient(
-    to left,
-    rgba(217, 221, 255, 1) 22%,
-    rgba(100, 115, 255, 1) 88%
+    68deg,
+    rgba(217, 221, 255, 0) 0%,
+
+    rgba(100, 115, 255, 1) 2%,
+    rgba(199, 205, 255, 1) 33%
   );
   background-clip: text;
   -webkit-background-clip: text;

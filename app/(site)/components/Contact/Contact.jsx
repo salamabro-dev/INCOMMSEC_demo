@@ -6,7 +6,7 @@ import Image from "next/image";
 export default async function Contact() {
   const forms = await getForm();
   return (
-    <section className="pt-[50px] lg:pt-[100px]">
+    <section className="pt-[100px] lg:pt-[100px]">
       <div className="text-center p-12 lg:p-[8rem]">
         <h2 className="banner-heading pb-4">
           Security tailored to your business
@@ -21,7 +21,7 @@ export default async function Contact() {
           <ContactClient />
           <div className="col-span-6 lg:ml-[5rem] flex justify-center">
             <Image
-              className="w-[300px] lg:w-[500px] lg:h-[330px]"
+              className="w-[300px] lg:w-[500px] lg:h-[330px] hidden md:block"
               src="/contact.svg"
               width={500}
               height={330}

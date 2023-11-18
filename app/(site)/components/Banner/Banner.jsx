@@ -14,7 +14,7 @@ export default async function Banner() {
           className="bg-primary-white-p px-4 pb-8 pt-[100px] lg:pt-[100px]"
         >
           <div className="text-center pt-8 text-primary-blue-p2">
-            <p className="py-2 text-2xl">{banner.sectionTitle}</p>
+            <p className="py-2 text-xl lg:text-2xl">{banner.sectionTitle}</p>
             <div className="py-4">
               <h1 className="title banner-heading tracking-[3.68px] font-extrabold pb-2">
                 {banner.bannerHeading}

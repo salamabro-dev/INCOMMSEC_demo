@@ -19,16 +19,21 @@ function HeaderClient({ children }) {
       prevScrollPos = currentScrollPos;
     };
 
+    // Initialize on load
+    handleScroll();
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleScroll);
     };
   }, []);
   return (
     <>
       <header
-        className={`fixed top-0 z-50  transition-transform duration-700 transform w-full ${
+        className={`fixed top-0 z-50 transition-transform duration-700 transform w-full ${
           isScrolled ? "" : "-translate-y-full"
         }`}
       >
