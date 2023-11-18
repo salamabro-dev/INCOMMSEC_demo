@@ -10,10 +10,10 @@ export default async function Logo() {
         <div className="mr-auto" key={logos._id}>
           <a href="/">
             <Image
-              className="logo w-[10em] lg:w-[12em]"
+              className="logo "
               src={urlFor(logos.image).url()}
-              width={100}
-              height={100}
+              width={200}
+              height={150}
               alt="Incommsec logo"
               unoptimized
             />
