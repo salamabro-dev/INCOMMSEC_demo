@@ -48,7 +48,7 @@ const bannerSchema = {
       fields: [
         {
           name: "alt",
-          title: "Alt",
+          title: "Alternative text",
           type: "string",
         },
       ],

@@ -8,17 +8,17 @@ export default function MenuOverlay({ displayMenu, onCloseMenu }) {
 
   return (
     <div
-      className={`lg:hidden bg-white menu-overlay fixed flex top-[148px] left-0 h-screen w-screen overflow-y-hidden z-10 transform transition-transform duration-300 ${
+      className={`lg:hidden bg-white menu-overlay fixed flex top-[100px] left-0 h-screen w-screen z-10 transform transition-transform duration-300 ${
         displayMenu ? "translate-x-0" : "translate-x-full"
       }`}
     >
-      <nav className="gap-20 pl-[1rem] w-full ">
+      <nav className="pl-[1rem] w-full ">
         <div className="text-center text-primary-dark-p my-8">
           <p className="text-2xl font-bold archivo text-primary-blue-p">
             Custom EndPoint Security solutions
           </p>
         </div>
-        <ul className="flex flex-col gap-y-12 mt-8">
+        <ul className="flex flex-col gap-y-8 mt-8">
           <MenuItem
             text="Endpoint protection"
             link="/end-point-protection"

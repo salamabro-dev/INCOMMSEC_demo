@@ -1,6 +1,6 @@
 const logoSchema = {
   name: "logo",
-  type: "document",
+  type: "object",
   title: "Logo",
   fields: [
     {

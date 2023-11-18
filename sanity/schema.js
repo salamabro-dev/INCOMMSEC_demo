@@ -9,6 +9,7 @@ import pricingSchema from "./schema/components/pricingSchema";
 import index from "./schema/components/index";
 import formSchema from "./schema/components/formSchema";
 import logoSchema from "./schema/components/logoSchema";
+import landingPageSchema from "./schema/pages/landingPageSchema";
 
 export const schema = {
   types: [
@@ -22,5 +23,6 @@ export const schema = {
     pricingSchema,
     formSchema,
     logoSchema,
+    landingPageSchema,
   ],
 };

@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 import { getBanners, urlFor } from "../../../../sanity/sanity-utils";
 import { FaArrowRightLong } from "react-icons/fa6";
@@ -10,7 +11,7 @@ export default async function Banner() {
       {banners.map((banner) => (
         <section
           key={banner._id}
-          className="bg-primary-white-p px-4 pb-8 pt-[50px] lg:pt-[100px]"
+          className="bg-primary-white-p px-4 pb-8 pt-[100px] lg:pt-[100px]"
         >
           <div className="text-center pt-8 text-primary-blue-p2">
             <p className="py-2 text-2xl">{banner.sectionTitle}</p>
