@@ -9,10 +9,11 @@ import pricingSchema from "./schema/components/pricingSchema";
 import index from "./schema/components/index";
 import formSchema from "./schema/components/formSchema";
 import logoSchema from "./schema/components/logoSchema";
-import landingPageSchema from "./schema/pages/landingPageSchema";
+import PageBuilder from "./schema/pages/Page";
 
 export const schema = {
   types: [
+    PageBuilder,
     bannerSchema,
     index,
     howWeWorkSchema,
@@ -22,7 +23,7 @@ export const schema = {
     reviewsSchema,
     pricingSchema,
     formSchema,
-    logoSchema,
-    landingPageSchema,
+    logoSchema
+    
   ],
 };

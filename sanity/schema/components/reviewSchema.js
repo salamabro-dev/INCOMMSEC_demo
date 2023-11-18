@@ -1,6 +1,6 @@
 const reviewsSchema = {
   name: "reviews",
-  type: "object",
+  type: "document",
   title: "Reviews",
   fields: [
     {
